@@ -2,7 +2,9 @@
 
 A private, local-first desktop app for tracking all your financial assets in **PLN** — with Polish **PIT-38** tax rules built in.
 
-This repository holds the **released app** only. Download it from [Releases](../../releases).
+**[⬇ Download the latest version (.dmg)](https://github.com/cabajero/FinAssist-releases/releases/latest)** — the installer is attached to each release (under *Assets*), not stored as a file in this repository.
+
+This repository holds the **released app** only.
 
 ## What it does
 
