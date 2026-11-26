@@ -36,14 +36,14 @@ Check the download against `SHA256SUMS.txt` in the release: `shasum -a 256 FinAs
 
 FinAssist checks for a new version each time it starts and shows a banner when one is out.
 
-- **From 1.9.0 on:** click **Update now** in the banner (or under Accounts › Updates). FinAssist backs up your data, downloads the new version, checks its signature, installs it and restarts. Nothing is installed without your click.
+- **From 1.9.0 on:** click **Update now** in the banner (or under Settings › Updates). FinAssist backs up your data, downloads the new version, checks its signature, installs it and restarts. Nothing is installed without your click.
 - **Older versions:** quit FinAssist, open the new `.dmg` and drag FinAssist to Applications again (replace).
 
 Your data stays where it is. macOS asks for your Keychain password once after each update (FinAssist keeps its saved keys behind one Keychain item): click **Always Allow**. Install releases in order of time — a newer database can't be opened by an older version.
 
 ## Your data
 
-Everything stays on your Mac, in `~/Library/Application Support/com.finassist.app/` (a single SQLite database plus its backups). FinAssist has no account and no server. It only connects to:
+Everything stays on your Mac, in `~/Library/Application Support/com.finassist.app/` (a single SQLite database plus its backups), readable by your user account only. FinAssist has no account and no server. It only connects to:
 - the IBKR Flex Web Service, Binance and Coinbase (only if you set up sync; exchange keys must be read-only),
 - tastytrade and Finnhub (only if you add a key: option prices, levels and expected moves, company facts, financials and insider trades),
 - the NBP API (exchange rates),
