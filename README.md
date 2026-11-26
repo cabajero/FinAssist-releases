@@ -13,7 +13,8 @@ This repository holds the **released app** only.
 - **Options** — open contracts with live prices (with a tastytrade account), vertical spreads as one row with a profit-and-loss chart, a yearly summary of closed options.
 - **Cash and real estate** — bank and savings balances per place; properties with purchase details, co-ownership share and dated valuations.
 - **Savings plans** — IKE, IKZE, PPK, OFE and insurance policies (counted at their withdrawal value): contributions by you, your employer or the state, values from statements, and for IKE/IKZE the yearly limit with how much more you can pay in.
-- **Holdings** — profit and loss over time per stock, a price chart with indicators (RSI, MACD, moving averages, Parabolic SAR), key company facts and volatility.
+- **Holdings** — profit and loss over time per stock (dividends included), a price chart with indicators (RSI, MACD with divergences, moving averages, Parabolic SAR), key company facts and volatility.
+- **Watchlists and Stock analysis** — follow any ticker with the columns you choose (price, IV percentile, next dividend and earnings, day / month / year-to-date change); open any ticker for its full details: company profile, volume, the expected move priced into its options, reported financials, insider trades and peers.
 - **Overview** — net worth, value over time, breakdown by asset class, currency and place, today's movers.
 - **Performance** — time-weighted and money-weighted return, compared with the S&P 500 (total return, in PLN).
 - **Income** — dividends and interest by month and by stock, with an estimate of the next 12 months.
@@ -44,7 +45,7 @@ Your data stays where it is. macOS asks for your Keychain password once after ea
 
 Everything stays on your Mac, in `~/Library/Application Support/com.finassist.app/` (a single SQLite database plus its backups). FinAssist has no account and no server. It only connects to:
 - the IBKR Flex Web Service, Binance and Coinbase (only if you set up sync; exchange keys must be read-only),
-- tastytrade and Finnhub (only if you add a key: option prices and levels, company facts),
+- tastytrade and Finnhub (only if you add a key: option prices, levels and expected moves, company facts, financials and insider trades),
 - the NBP API (exchange rates),
 - Yahoo Finance, Coinbase, Binance and Crypto.com (prices — requests contain only tickers),
 - GitHub (this repository: is there a new version, and the update itself).
